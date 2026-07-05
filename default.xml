@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+
+  <default remote="github"
+           revision="main"
+           sync-j="8"
+           sync-c="true"
+           sync-tags="false" />
+
+  <project name="sethome2/gpr_manifest" path="gpr_manifest" revision="main">
+    <copyfile src="README.md" dest="README.md" />
+    <copyfile src="AGENTS.md" dest="AGENTS.md" />
+  </project>
+
+  <project name="gprMax/gprMax" path="gprMax" revision="devel" />
+  <project name="sethome2/gprmax_backend" path="gprmax_backend" revision="main" />
+  <project name="sethome2/gprMax_docker" path="gprMax_docker" revision="main" />
+  <project name="sethome2/gprMax-Workbench" path="gprMax-Workbench" revision="main" />
+  <project name="sethome2/gprMax_in_doc" path="gprMax_in_doc" revision="main" />
+  <project name="sethome2/gprMax_doc" path="gprMax_doc" revision="main" />
+</manifest>
