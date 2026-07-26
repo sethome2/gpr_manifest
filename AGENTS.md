@@ -4,6 +4,7 @@
 - `gprMax` gprMax软件本体，基于FDTD方法的电磁方法，常用于探底雷达仿真
 - `gprmax_backend` gprMax-Workbench的后端程序
 - `gprMax_docker` 封装gprMax的docker file文件，包含GPU和CPU版本
+- `gprMax_worker` gprMax运行节点Agent，连接RabbitMQ和Django内部API，并调用CPU/GPU Docker镜像
 - `gprMax-Workbench` gprMax的前端程序，主要采用Vue, ElementPlus, Tailwind CSS和ThreeJS作为可视化。
 - `gprMax_in_doc` 内部文档，关于gprmax的in文件
 - `gprMax_doc` 外部文档，关于gprMax-Workbench的使用说明，使用Material for MkDocs搭建。环境为miniconda的gpr环境。
@@ -11,3 +12,9 @@
 项目都包含README.md，做修改时提前查看，每个文件夹下面都有可能有，如果有不同的地方，及时修改。
 
 环境默认打开了代理，如果使用curl命令查看本地项目结果，需要取消代理。
+
+项目还没发布，不需要考虑任何对旧版本工程文件的兼容。
+
+如需要使用Python环境，优先使用conda虚拟环境gpr（gpr软件本体除外，在里面新建虚拟环境进行调试）。
+
+开发服务器在沙箱内绑定本地端口，需要按权限流程请求在沙箱外启动同一个命令。

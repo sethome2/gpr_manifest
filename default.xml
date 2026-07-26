@@ -16,6 +16,7 @@
   <project name="gprMax/gprMax" path="gprMax" revision="devel" />
   <project name="sethome2/gprmax_backend" path="gprmax_backend" revision="main" />
   <project name="sethome2/gprMax_docker" path="gprMax_docker" revision="main" />
+  <project name="sethome2/gprMax_worker" path="gprMax_worker" revision="main" />
   <project name="sethome2/gprMax-Workbench" path="gprMax-Workbench" revision="main" />
   <project name="sethome2/gprMax_in_doc" path="gprMax_in_doc" revision="main" />
   <project name="sethome2/gprMax_doc" path="gprMax_doc" revision="main" />

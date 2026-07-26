@@ -56,6 +56,7 @@ repo start frontend-work gprMax-Workbench
 - `gprMax`：gprMax 软件本体，基于 FDTD 方法的电磁仿真程序，常用于探地雷达仿真。
 - `gprmax_backend`：gprMax-Workbench 后端程序。
 - `gprMax_docker`：封装 gprMax 的 Dockerfile 文件，包含 GPU 和 CPU 版本。
+- `gprMax_worker`：连接 RabbitMQ 和后端内部 API、调用 CPU/GPU Docker 镜像执行仿真的节点 Agent。
 - `gprMax-Workbench`：gprMax 前端程序，主要采用 Vue、Element Plus、Tailwind CSS 和 Three.js。
 - `gprMax_in_doc`：内部文档，关于 gprMax `.in` 文件。
 - `gprMax_doc`：外部使用说明文档，使用 Material for MkDocs/zensical 构建。
