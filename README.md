@@ -53,7 +53,7 @@ repo start frontend-work gprMax-Workbench
 ## 工作区结构
 
 - `gpr_manifest`：工作区管理仓库，包含 `repo` manifest 和根目录说明文件源文件。
-- `gprMax`：gprMax 软件本体，基于 FDTD 方法的电磁仿真程序，常用于探地雷达仿真。
+- `gprMax`：只读使用官方 `master` 源码；只同步上游，不提交或部署源码补丁。生产镜像跟随 v4 正式 release，开发镜像跟随 `master`，两者分别管理。
 - `gprmax_backend`：gprMax-Workbench 后端程序。
 - `gprMax_docker`：封装 gprMax 的 Dockerfile 文件，包含 GPU 和 CPU 版本。
 - `gprMax_worker`：连接 RabbitMQ 和后端内部 API、调用 CPU/GPU Docker 镜像执行仿真的节点 Agent。

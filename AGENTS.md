@@ -1,7 +1,7 @@
 这个是gprMax的服务型程序，前端采用Vue，后端使用Django，Django获取到运行配置后，分发到运行机器上，用Docker容器运行。
 
 项目按以下结构分配:
-- `gprMax` gprMax软件本体，基于FDTD方法的电磁方法，常用于探底雷达仿真
+- `gprMax` 官方上游源码，只允许同步官方 GitHub 引用，不允许修改、提交补丁或在 Docker 镜像中覆盖源码。容量单位等展示需求必须在 Workbench 自有代码中实现。
 - `gprmax_backend` gprMax-Workbench的后端程序
 - `gprMax_docker` 封装gprMax的docker file文件，包含GPU和CPU版本
 - `gprMax_worker` gprMax运行节点Agent，连接RabbitMQ和Django内部API，并调用CPU/GPU Docker镜像
