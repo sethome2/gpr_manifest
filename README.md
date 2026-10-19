@@ -81,3 +81,5 @@ repo start frontend-work gprMax-Workbench
 2026-10-20 清理时的旧编译产物、缓存及移动清单位于
 `.local/gprmax-backups/official-restore-20261020/`；误改提交保存在
 `backup/capacity-format-44b3974e` 分支。以上本地环境、备份不提交到官方仓库。
+
+V4 CPU/GPU 生产切换、镜像 digest、备份与验收记录见 [官方镜像恢复记录](https://github.com/sethome2/gprMax_worker/blob/main/deployments/official-images-20261020.md)。
