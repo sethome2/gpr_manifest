@@ -71,3 +71,13 @@ repo start frontend-work gprMax-Workbench
 `repo sync` 会通过 `default.xml` 中的 `copyfile` 把它们复制到工作区根目录。修改这些文件时，优先修改 `gpr_manifest` 里的源文件，再同步或手动复制到根目录。
 
 `repo` 实际使用的 manifest 位于 `.repo/manifests/default.xml`；工作区中的 `gpr_manifest/default.xml` 是可见副本，便于查看、修改和提交。
+
+
+## 本地官方源码工作副本
+
+`gprMax` 仅保留官方 master 的受版本控制内容；不要在其中创建虚拟环境、执行 editable 安装或原地编译。
+本地独立环境位于工作区根目录 `.venv-gprmax-homepage/`，使用官方 4.0.1 二进制 wheel；
+运行时请在工作区根目录或模型目录调用该环境，避免当前目录遮蔽安装包。
+2026-10-20 清理时的旧编译产物、缓存及移动清单位于
+`.local/gprmax-backups/official-restore-20261020/`；误改提交保存在
+`backup/capacity-format-44b3974e` 分支。以上本地环境、备份不提交到官方仓库。
